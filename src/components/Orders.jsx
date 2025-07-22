@@ -7,7 +7,7 @@ const Orders = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/allOrders");
+        const res = await axios.get("https://zerodha-backend-t99f.onrender.com/allOrders");
         setAllOrders(res.data);
       } catch (error) {
         console.error("Error fetching orders:", error);
