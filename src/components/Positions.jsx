@@ -6,7 +6,7 @@ const Positions = () => {
   useEffect(() => {
     const fetchPositions = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/allPositions");
+        const res = await axios.get("https://zerodha-backend-t99f.onrender.com/allPositions");
         setAllPositions(res.data);
       } catch (error) {
         console.error("Error fetching positions:", error);
