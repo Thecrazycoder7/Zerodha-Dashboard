@@ -32,7 +32,7 @@ const Home = () => {
         setUser(JSON.parse(savedUser));
       } else {
         console.log("❌ No user found, redirecting to login...");
-        window.location.href = "http://localhost:5173/login";
+        window.location.href = "https://zerodha-frontend-six.vercel.app/login";
       }
     }
   }, []);
